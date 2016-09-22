@@ -1,0 +1,41 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  padding-right: 10px;
+  @include media(tablet) {
+    width: 100%;
+  }
+  @include media(mobile) {
+    padding-right: 0;
+  };
+
+  main {
+    padding: 20px;
+    overflow: hidden;
+
+    .row {
+      width: 100%;
+      display: inline-block;
+      padding-top: 7px;
+    }
+
+    .row:nth-child(n+2) {
+      @include media(mobile) {
+        padding-top: 13px;
+      };
+    }
+
+    .row:nth-child(2) .content-container {
+        background: $darkBlue;
+
+        &:hover {
+          @include containerHover;
+        }
+    }
+
+    .row:nth-child(2) .arrow-left {
+      border-right: 7px solid $darkBlue;
+    }
+  }
+}

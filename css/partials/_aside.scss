@@ -1,0 +1,75 @@
+aside {
+  float: left;
+  width: 20%;
+  position: relative;
+  @include media(tablet) {
+    width: 23%
+  }
+  @include media(mobile) {
+    float: none;
+    height: 45px;
+    width: 100%;
+  }
+
+  .date-time-container {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    text-align: right;
+    padding-right: 10px;
+
+    h6 {
+      font-size: 9px;
+      color: #adadad;
+      padding-top: 5px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: $darkBlue;
+      padding-top: 3px;
+      @include media(tablet) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .icon-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .fa {
+      background: #46a4da;
+      color: #fff;
+      padding: 2px 8px;
+      font-size: 23px;
+      border-radius: 50%;
+      border: #afdcf8 solid 5px;
+      @include transition(all .4s ease-in-out);
+
+      &:hover {
+        @include iconHover;
+      }
+    }
+
+    .fa-desktop {
+      font-size: 14px;
+      padding: 6px;
+    }
+
+    .line {
+      position: absolute;
+      background: #afdcf8;
+      height: 245px;
+      width: 6px;
+      right: 15px;
+      @include media(tablet) {
+        height: 345px;
+      }
+      @include media(mobile) {
+        height: 800px;
+      };
+    }
+  }
+}

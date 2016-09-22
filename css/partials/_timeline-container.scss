@@ -1,0 +1,56 @@
+.timeline-container {
+  float: right;
+  width: 78%;
+  position: relative;
+
+  @include media(tablet) {
+    width: 75%
+  }
+  @include media(mobile) {
+    float: none;
+    width: 100%;
+  };
+
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid $blue;
+    position: absolute;
+    left: -7px;
+    top: 10px;
+    @include media(mobile) {
+      display: none;
+    };
+  }
+
+  .content-container {
+    background: $blue;
+    padding: 25px 25px 40px;
+    border-radius: 3px;
+    margin-top: 3px;
+    transition: all .5s ease-out;
+
+    &:hover {
+      @include containerHover;
+    }
+
+    h2 {
+      padding-bottom: 9px;
+      border-bottom: #afdcf8 solid .5px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    p {
+      padding-top: 17px;
+      font-size: 13px;
+      color: #fff;
+      font-weight: 100;
+      line-height: 16px;
+    }
+  }
+
+}

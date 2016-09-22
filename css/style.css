@@ -1,0 +1,136 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  padding-right: 10px; }
+  @media only screen and (max-width: 665px) {
+    .container {
+      width: 100%; } }
+  @media only screen and (max-width: 475px) {
+    .container {
+      padding-right: 0; } }
+  .container main {
+    padding: 20px;
+    overflow: hidden; }
+    .container main .row {
+      width: 100%;
+      display: inline-block;
+      padding-top: 7px; }
+    @media only screen and (max-width: 475px) {
+      .container main .row:nth-child(n+2) {
+        padding-top: 13px; } }
+    .container main .row:nth-child(2) .content-container {
+      background: #46a4da; }
+      .container main .row:nth-child(2) .content-container:hover {
+        background-color: #F1858A;
+        border-radius: 10px; }
+    .container main .row:nth-child(2) .arrow-left {
+      border-right: 7px solid #46a4da; }
+
+aside {
+  float: left;
+  width: 20%;
+  position: relative; }
+  @media only screen and (max-width: 665px) {
+    aside {
+      width: 23%; } }
+  @media only screen and (max-width: 475px) {
+    aside {
+      float: none;
+      height: 45px;
+      width: 100%; } }
+  aside .date-time-container {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    text-align: right;
+    padding-right: 10px; }
+    aside .date-time-container h6 {
+      font-size: 9px;
+      color: #adadad;
+      padding-top: 5px; }
+    aside .date-time-container h1 {
+      font-size: 28px;
+      color: #46a4da;
+      padding-top: 3px; }
+      @media only screen and (max-width: 665px) {
+        aside .date-time-container h1 {
+          font-size: 24px; } }
+  aside .icon-container {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    aside .icon-container .fa {
+      background: #46a4da;
+      color: #fff;
+      padding: 2px 8px;
+      font-size: 23px;
+      border-radius: 50%;
+      border: #afdcf8 solid 5px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      aside .icon-container .fa:hover {
+        transform: scale(1.2); }
+    aside .icon-container .fa-desktop {
+      font-size: 14px;
+      padding: 6px; }
+    aside .icon-container .line {
+      position: absolute;
+      background: #afdcf8;
+      height: 245px;
+      width: 6px;
+      right: 15px; }
+      @media only screen and (max-width: 665px) {
+        aside .icon-container .line {
+          height: 345px; } }
+      @media only screen and (max-width: 475px) {
+        aside .icon-container .line {
+          height: 800px; } }
+
+.timeline-container {
+  float: right;
+  width: 78%;
+  position: relative; }
+  @media only screen and (max-width: 665px) {
+    .timeline-container {
+      width: 75%; } }
+  @media only screen and (max-width: 475px) {
+    .timeline-container {
+      float: none;
+      width: 100%; } }
+  .timeline-container .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #6cbfee;
+    position: absolute;
+    left: -7px;
+    top: 10px; }
+    @media only screen and (max-width: 475px) {
+      .timeline-container .arrow-left {
+        display: none; } }
+  .timeline-container .content-container {
+    background: #6cbfee;
+    padding: 25px 25px 40px;
+    border-radius: 3px;
+    margin-top: 3px;
+    transition: all .5s ease-out; }
+    .timeline-container .content-container:hover {
+      background-color: #F1858A;
+      border-radius: 10px; }
+    .timeline-container .content-container h2 {
+      padding-bottom: 9px;
+      border-bottom: #afdcf8 solid .5px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px; }
+    .timeline-container .content-container p {
+      padding-top: 17px;
+      font-size: 13px;
+      color: #fff;
+      font-weight: 100;
+      line-height: 16px; }
+
+/*# sourceMappingURL=style.css.map */
